@@ -119,6 +119,7 @@ const user_create_post = async (req, res) => {
   }
 };
 
+// Update user and order
 const user_update_patch = async (req, res) => {
   try {
     const user = await User.findOne({
@@ -221,6 +222,7 @@ const user_update_patch = async (req, res) => {
   }
 };
 
+// delete user
 const user_delete = async (req, res) => {
   try {
     const user = await User.findOne({

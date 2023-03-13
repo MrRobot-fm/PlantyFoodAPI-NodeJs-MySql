@@ -44,6 +44,7 @@ User.belongsToMany(Product, {
   foreignKey: 'user_name',
   sourceKey: 'firstName',
   onDelete: 'CASCADE',
+  onUpdate: 'CASCADE',
   constraints: false
 });
 
@@ -61,7 +62,7 @@ db.authenticate()
   .then(() => {
     try {
       db.sync();
-      console.log('Sync to db success✔️');
+      console.log('Sync to db success ✔️');
     } catch (error) {
       console.log('Cant connect to database⛔');
     }

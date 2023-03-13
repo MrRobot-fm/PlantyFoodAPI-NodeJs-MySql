@@ -99,7 +99,7 @@ const product_update_patch = async (req, res) => {
 
     res
       .status(200)
-      .json({ message: 'Order updated!', productUpdated: updateProduct });
+      .json({ message: 'Product updated!', productUpdated: updateProduct });
   } catch (error) {
     res.status(400).json({ message: error.message });
   }

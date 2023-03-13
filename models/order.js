@@ -32,6 +32,12 @@ const Order = sequelize.define('Order', {
 
       return now.toLocaleDateString('en-GB');
     }
+  },
+  ProductId: {
+    type: Sequelize.INTEGER
+  },
+  UserId: {
+    type: Sequelize.INTEGER
   }
 });
 

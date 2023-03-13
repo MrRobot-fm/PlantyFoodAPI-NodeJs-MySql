@@ -39,13 +39,9 @@ const orders_by_id_get = async (req, res) => {
 // Get All Orders by Date
 const orders_by_date_get = async (req, res) => {
   try {
-    // const reqDate = req.body.date;
-    // const date = new Date(reqDate);
-
     const find = await Order.findAll({
       where: {
         createdAt: req.query.date
-        // date.toLocaleDateString('en-US')
       }
     });
 
@@ -138,11 +134,9 @@ const orders_by_user_id_get = async (req, res) => {
 // Create New Order
 const create_order_post = async (req, res) => {
   try {
-    const { orderName, orderProduct } = req.body;
-
     const user = await User.findOne({
       where: {
-        firstName: orderName
+        firstName: req.body.orderUserName
       }
     });
 
@@ -152,7 +146,7 @@ const create_order_post = async (req, res) => {
 
     const product = await Product.findOne({
       where: {
-        product: orderProduct
+        product: req.body.orderProduct
       }
     });
 
