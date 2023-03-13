@@ -32,7 +32,7 @@ Finally, you can search through the users, products and orders with some queries
  git clone https://github.com/MrRobot-fm/PlantyFoodAPI-NodeJs-MySql.git
 ```
 2) Setup a MySQL Database;
-3) Import the migration file migration.sql
+3) Import the migration file planty_food_api.sql
 4) Create a .env file and fill it with your DB data:
 ```
   NODE_LISTEN_PORT= ""
