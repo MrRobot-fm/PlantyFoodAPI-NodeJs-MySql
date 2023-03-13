@@ -128,12 +128,10 @@ Alternatively we can create the user and product directly while creating the ord
 
 ```json
 {
-  "user_name": "insert an alphanumeric string",
-  "product_name": "insert an alphanumeric string",
-  "firstName": "insert an alphanumeric string",
+  "userName": "insert an alphanumeric string",
+  "productName": "insert an alphanumeric string",
   "lastName": "insert an alphanumeric string",
   "email": "insert a valid email",
-  "product":"insert an alphanumeric string"
 }
 ```
 
